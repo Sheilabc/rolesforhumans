@@ -1,1 +1,112 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roles for Humans</title>
+  <style>
+    :root {
+      --mint-green: #b2f2bb;
+      --soft-blue: #a5d8ff;
+      --dark-green: #2b8a3e;
+      --dark-blue: #1c7ed6;
+      --background: #f8f9fa;
+      --text-color: #212529;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: var(--dark-blue);
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background: var(--mint-green);
+      padding: 1em;
+    }
+
+    nav a {
+      color: var(--dark-green);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2em;
+      background: white;
+      margin: 1em auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .initiative-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 1em;
+      background: #f1f3f5;
+    }
+
+    .initiative-card h3 {
+      margin-top: 0;
+    }
+
+    .upvote {
+      float: right;
+      background: var(--soft-blue);
+      color: var(--dark-blue);
+      padding: 0.4em 0.8em;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5em;
+    }
+
+    input, textarea, select, button {
+      margin-top: 0.5em;
+      padding: 0.75em;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: var(--dark-green);
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #267034;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Roles for Humans</h1>
+    <p>AI-assigned meaningful work for a better world</p>
+  </header>
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#initiatives">Initiatives</a>
+    <a href="#s
